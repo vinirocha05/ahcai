@@ -7,16 +7,27 @@ import { useTheme } from "styled-components";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [scrollY,setScrollY] = useState(false);
+  const [changeHeader,setChangeHeader] = useState(false);
+  useEffect(() => {
+    const scrollListener = () => {
+      if (window.scrollY > 800) {
+        setChangeHeader(true);
+      } else {
+        setChangeHeader(false);
+      }
+    };
+
+    window.addEventListener('scroll', scrollListener);
+  }, []);
 
   return (
     <section>
-      <Header />
+      <Header changeHeader={changeHeader}/>
       <div className={style.introBg}>
       </div>
 
       {/*Primeira sessão*/}
-      <div className={style.alignContent}>
+      <div className={style.alignContent} id='inicio'>
         <div className={style.contentBox}>
           <div className="contentImage">
             <Image src='/assets/img/family_photo.jpg' alt='family' width='700px' height='500px' />
