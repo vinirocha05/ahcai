@@ -1,37 +1,53 @@
-.introBg{
-  background-image: url('/assets/img/intro_background.jpg');
+.introBg {
+  background-image: url("/assets/img/intro_background.jpg");
   height: 100vh;
+  width: 210vh;
   background-size: cover;
   background-position: center;
 }
 
-.bgRoxo{
-  background-image: url('/assets/img/purpleBg.svg');
+.bgRoxo {
+  background-image: url("/assets/img/purpleBg.svg");
   color: white;
-
 }
 
-.bgWhite{
+.bgWhite {
   color: var(--primary-color);
   background-color: white;
 }
 
-
-
-.contentBox{
+.contentBox {
   height: 60vh;
   display: grid;
   gap: 50px;
   grid-template-columns: 1fr 1fr;
-  margin: 100px 100px;
+  margin: 100px auto;
   font-size: 2rem;
 }
 
-.alignContent{
+.alignContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  height: 100vh;
+  width: 200vh;
 }
 
+@media (max-width: 450px) {
+  .contentBox {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 10px;
+    padding: 10px;
+    margin-top:-50px ;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video{
+    width: 300px;
+    height: 300px;
+  }
+}

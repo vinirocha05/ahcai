@@ -29,7 +29,7 @@ export default function Home() {
       {/*Primeira sessão*/}
       <div className={style.alignContent} id='inicio'>
         <div className={style.contentBox}>
-          <div className="contentImage">
+          <div>
             <Image src='/assets/img/family_photo.jpg' alt='family' width='700px' height='500px' />
           </div>
           <div className={style.bgWhite}>
@@ -41,17 +41,18 @@ export default function Home() {
 
       {/*Segunda sessão*/}
 
-      <div className={`${style.alignContent} ${style.bgRoxo}`} id='sobre'>
-        <div className={style.contentBox}>
-          <div >
+      <div className={`${style.alignContent} ${style.bgRoxo}`} id='inicio'>
+        <div className={`${style.contentBox} `}>
+          <div>
+            <video className={style.video} style={{ borderRadius: '10px' }} src="./assets/videos/ahcai_video.mp4 " controls type='video/mp4'></video>          </div>
+          <div>
             <h2>Onde todo mundo se encontra</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
           </div>
-          <div >
-            <video style={{borderRadius: '10px'}} src="./assets/videos/ahcai_video.mp4 " controls type='video/mp4'></video>
-          </div>
         </div>
       </div>
+
+
       {/*Terceira sessão*/}
       <div className={style.alignContent} id='contato'>
         <div className={style.contentBox}>
