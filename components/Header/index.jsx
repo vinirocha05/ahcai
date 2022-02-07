@@ -7,14 +7,14 @@ export default function Nav({changeHeader}) {
     <header style={changeHeader? {backgroundColor: 'var(--primary-color)'}:{backgroundColor: 'transparent'}} className={style.header}>
       <div style={{marginLeft: '40px',}} >
         <div className={style.img} style={changeHeader? {backgroundColor: 'white'}:{backgroundColor: 'transparent'}} >
-        <Image src='/assets/img/ahcai_logo.png' alt="acai" width='200px' height='200px'/>
+        <Image src='/assets/img/ahcai_logo.png' alt="acai" width='100px' height='100px'/>
         </div>
       </div>
       <div className={style.list}>
         <ul>
           <li><Link href='#inicio' >Início</Link></li>
-          <li><Link href='#inicio' >Sobre</Link></li>
-          <li><Link href='#inicio' >Contato</Link></li>
+          <li><Link href='#sobre' >Sobre</Link></li>
+          <li><Link href='#contato' >Contato</Link></li>
           </ul>
 
       </div>
