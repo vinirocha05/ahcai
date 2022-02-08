@@ -1,4 +1,5 @@
 .productRow {
+  width: 100rem;
 }
 
 .listArea {
@@ -12,6 +13,7 @@
   display: inline-block;
   width: 150px;
   cursor: pointer;
+  transition: all ease 500ms;
 }
 
 .productList img {
@@ -30,6 +32,7 @@
 }
 .productListItem h2{
   margin-left: 1.4rem;
+  width: 20rem;
 
 }
 
@@ -40,9 +43,12 @@
 }
 
 .productDescription{
-  width: 50rem;
+  width: 40rem;
+
 }
 
 .productImage{
   width: 35rem;
 }
+
+

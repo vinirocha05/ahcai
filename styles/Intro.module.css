@@ -35,8 +35,11 @@
 }
 .productContainer {
   height: 70vh;
+  width: 100vw;
   font-size: 2rem;
   display: flex;
+  transition: all ease .8s;
+  margin-right: 10rem;
   overflow-x: hidden;
 }
 
@@ -89,6 +92,28 @@
     margin: 0;
   }
 
+}
+
+.buttonLeft{
+  left: 0;
+  font-size: 5rem;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.buttonRight{
+  right: 0;
+  font-size: 5rem;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 
