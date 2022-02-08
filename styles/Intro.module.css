@@ -9,11 +9,14 @@
 .bgRoxo {
   background-image: url("/assets/img/purpleBg.svg");
   color: white;
+  width: 100vw;
 }
 
 .bgWhite {
   color: var(--primary-color);
   background-color: white;
+  width: 100vw;
+
 }
 
 .center {

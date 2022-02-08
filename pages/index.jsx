@@ -70,7 +70,7 @@ export default function Home() {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.productContainer}>
             {produtos.map((e,key)=>(
-              <ProductRow title={e.title} photo={e.photo} key={key} />
+              <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
             ))}
         </div>
       </div>

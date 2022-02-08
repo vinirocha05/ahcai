@@ -4,14 +4,20 @@ export default function handler(req, res) {
   const produtos = [
     {
       title: "Açaí",
+      about:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!",
       photo: "http://localhost:3000/assets/img/tigela_acai.jpg",
     },
     {
       title: "Água de coco",
+      about:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!",
       photo: "http://localhost:3000/assets/img/agua_coco.png",
     },
     {
       title: "Sorvetes",
+      about:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!",
       photo: "http://localhost:3000/assets/img/sorvete.jpg",
     },
   ];
