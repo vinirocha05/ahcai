@@ -30,6 +30,12 @@
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
 }
+.productContainer {
+  height: 70vh;
+  font-size: 2rem;
+  display: flex;
+  overflow-x: hidden;
+}
 
 .textContainer{
   padding: 3rem;

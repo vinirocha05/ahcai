@@ -4,7 +4,7 @@ export default function handler(req, res) {
   const produtos = [
     {
       title: "Açaí",
-      photo: "http://localhost:3000/assets/img/copo_acai.jpg",
+      photo: "http://localhost:3000/assets/img/tigela_acai.jpg",
     },
     {
       title: "Água de coco",

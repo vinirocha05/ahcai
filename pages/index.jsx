@@ -2,12 +2,23 @@ import Image from "next/image";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ProductRow from "../components/ProductRow";
+
 import style from '../styles/Intro.module.css'
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [changeHeader, setChangeHeader] = useState(false);
+  const [produtos, setProdutos] = useState([]);
+
+  const dados =async() =>{
+    fetch('http://localhost:3000/api/produtos')
+    .then(resp => resp.json())
+    .then(dados => setProdutos(dados))
+  }
+  console.log(produtos);
   useEffect(() => {
+    dados()
     const scrollListener = () => {
       if (window.scrollY > 500) {
         setChangeHeader(true);
@@ -18,6 +29,7 @@ export default function Home() {
 
     window.addEventListener('scroll', scrollListener);
   }, []);
+
 
   return (
     <>
@@ -54,7 +66,30 @@ export default function Home() {
       </div>
 
 
-      {/*Terceira sessão*/}
+      {/*Terceira sessão Produtos*/}
+      <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
+        <div className={style.productContainer}>
+            {produtos.map((e,key)=>(
+              <ProductRow title={e.title} photo={e.photo} key={key} />
+            ))}
+        </div>
+      </div>
+            {/*Quarta sessão*/}
+
+            <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
+        <div className={style.contentBox}>
+        <div className={style.textContainer}>
+            <h2>Onde todo mundo se encontra</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
+          </div>
+          <div>
+            <video className={style.video} src="./assets/videos/ahcai_video.mp4 " controls type='video/mp4'></video>
+          </div>
+        </div>
+      </div>
+
+
+      {/*Quinta sessão*/}
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.mapContainer}>
