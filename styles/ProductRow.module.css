@@ -1,10 +1,48 @@
-.images{
-  display: inline-block;
-  transform: scale(.9);
-  margin: 5rem;
+.productRow {
 }
 
-.productionDescription{
+.listArea {
+  width: 1500px;
+  margin: 0 10px;
+  transition: all ease 500ms;
+  overflow: hidden;
+}
+
+.productList {
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+}
+
+.productList img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 500ms;
+}
+
+.productList img:hover {
+  transform: scale(1);
+}
+
+.productListItem {
+  width: 100%;
+  margin-left: 20rem;
+}
+.productListItem h2{
+  margin-left: 1.4rem;
+
+}
+
+.productInfo{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.productDescription{
+  width: 50rem;
+}
+
+.productImage{
+  width: 35rem;
 }
