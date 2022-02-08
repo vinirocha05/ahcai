@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaWhatsapp } from 'react-icons/fa'
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -11,12 +13,11 @@ export default function Home() {
   const [changeHeader, setChangeHeader] = useState(false);
   const [produtos, setProdutos] = useState([]);
 
-  const dados =async() =>{
+  const dados = async () => {
     fetch('http://localhost:3000/api/produtos')
-    .then(resp => resp.json())
-    .then(dados => setProdutos(dados))
+      .then(resp => resp.json())
+      .then(dados => setProdutos(dados))
   }
-  console.log(produtos);
   useEffect(() => {
     dados()
     const scrollListener = () => {
@@ -55,7 +56,7 @@ export default function Home() {
 
       <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
         <div className={style.contentBox}>
-        <div className={style.textContainer}>
+          <div className={style.textContainer}>
             <h2>Onde todo mundo se encontra</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
           </div>
@@ -69,16 +70,16 @@ export default function Home() {
       {/*Terceira sessão Produtos*/}
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.productContainer}>
-            {produtos.map((e,key)=>(
-              <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
-            ))}
+          {produtos.map((e, key) => (
+            <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
+          ))}
         </div>
       </div>
-            {/*Quarta sessão*/}
+      {/*Quarta sessão*/}
 
-            <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
+      <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
         <div className={style.contentBox}>
-        <div className={style.textContainer}>
+          <div className={style.textContainer}>
             <h2>Onde todo mundo se encontra</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
           </div>
@@ -93,11 +94,15 @@ export default function Home() {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.mapContainer}>
-          <iframe style={{ border: 'none', borderRadius: '5px' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.4591300944016!2d-47.81648918544224!3d-21.173912483656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf568c5abe11%3A0xd8bfa3bf81b7a6b1!2sAh*21%C3%A7ai%20Del%C3%ADcias%20Brasileiras!5e0!3m2!1spt-BR!2sbr!4v1644189555506!5m2!1spt-BR!2sbr" width="600" height="450" allowFullScreen="" loading="lazy"></iframe>
+            <iframe style={{ border: 'none', borderRadius: '5px' }} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.4591300944016!2d-47.81648918544224!3d-21.173912483656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf568c5abe11%3A0xd8bfa3bf81b7a6b1!2sAh*21%C3%A7ai%20Del%C3%ADcias%20Brasileiras!5e0!3m2!1spt-BR!2sbr!4v1644189555506!5m2!1spt-BR!2sbr" width="600" height="450" allowFullScreen="" loading="lazy"></iframe>
           </div>
           <div className={style.textContainer}>
             <h2>Onde todo mundo se encontra</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
+            <div className={style.iconsContainer}>
+            <Link href='https://whatsa.me/5516981584145/?t=Oii!%20Gostaria%20de%20saber%20mais%20sobre%20o%20A%C3%A7ai!' passHref><a><FaWhatsapp/></a></Link>
+            <Link href='https://www.ifood.com.br/delivery/ribeirao-preto-sp/ahcai-delicias-brasileiras-centro/33b49dfc-40cd-4bae-baff-028964ab516d?UTM_Medium=share' passHref><a><span><Image src='/assets/img/ifood-logo.svg' alt='Link para o ifood ' width='65px' height='45px' /></span></a></Link>
+            </div>
           </div>
         </div>
       </div>

@@ -3,3 +3,8 @@
   transform: scale(.9);
   margin: 5rem;
 }
+
+.productionDescription{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
