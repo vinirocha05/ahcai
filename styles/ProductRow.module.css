@@ -32,7 +32,6 @@
 }
 .productListItem h2{
   margin-left: 1.4rem;
-  width: 20rem;
 
 }
 
@@ -44,11 +43,16 @@
 
 .productDescription{
   width: 40rem;
-
 }
 
 .productImage{
   width: 35rem;
 }
 
+@media (max-width:650px){
+  .productInfo{
+    display: flex;
+    flex-direction: column;
+  }
+}
 

@@ -9,14 +9,11 @@
 .bgRoxo {
   background-image: url("/assets/img/purpleBg.svg");
   color: white;
-  width: 100vw;
 }
 
 .bgWhite {
   color: var(--primary-color);
   background-color: white;
-  width: 100vw;
-
 }
 
 .center {
@@ -35,17 +32,15 @@
 }
 .productContainer {
   height: 70vh;
-  width: 100vw;
   font-size: 2rem;
   display: flex;
   transition: all ease .8s;
-  margin-right: 10rem;
   overflow-x: hidden;
 }
 
 .textContainer{
   padding: 3rem;
-
+  width: 45rem;
 }
 
 .imgContainer{
@@ -70,29 +65,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-@media (max-width:650px){
-  .contentBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .textContainer{
-    margin-top: -5rem;
-  }
-
-  .video{
-    width: 40rem;
-    height: 30rem;
-  }
-
-  .mapContainer iframe{
-    width: 40rem;
-    height: 30rem;
-    margin: 0;
-  }
-
-}
 
 .buttonLeft{
   left: 0;
@@ -115,5 +87,35 @@
   color: var(--primary-color);
   cursor: pointer;
 }
+
+@media (max-width:650px){
+  .contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContainer{
+    margin-top: -5rem;
+  }
+
+  .video{
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .mapContainer iframe{
+    width: 40rem;
+    height: 30rem;
+    margin: 0;
+  }
+
+  .productContainer{
+    overflow-x: hidden;
+  }
+
+}
+
+
 
 

@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp } from 'react-icons/fa'
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ProductRow from "../components/ProductRow";
 
 import style from '../styles/Intro.module.css'
 import { useEffect, useState } from "react";
@@ -35,20 +33,7 @@ export default function Home() {
     window.addEventListener('scroll', scrollListener);
   }, []);
 
-  const handleClickLeft = () => {
-    x += 1800
-    if (x > 1800) {
-      x = 1800;
-    }
-    setX(x);
-  }
-  const handleClickRight = () => {
-    x -= 1800
-    if (x < -3600) {
-      x = -3600;
-    }
-    setX(x);
-  };
+
 
   return (
     <>
@@ -85,44 +70,8 @@ export default function Home() {
       </div>
 
 
-      {/*Terceira sessão Produtos*/}
-      <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
-        <button onClick={handleClickLeft} className={style.buttonLeft}><FaAngleLeft /></button>
-        <button onClick={handleClickRight} className={style.buttonRight}><FaAngleRight /></button>
 
-        <div className={style.productContainer} style={{ marginLeft: `${x}px` }} >
-          {produtos.map((e, key) => (
-            <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
-          ))}
-        </div>
-      </div>
-      {/*Terceira sessão Produtos*/}
-      <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
-        <button onClick={handleClickLeft} className={style.buttonLeft}><FaAngleLeft /></button>
-        <button onClick={handleClickRight} className={style.buttonRight}><FaAngleRight /></button>
-
-        <div className={style.gridContainer}>
-          {produtos.map((e, key) => (
-            <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
-          ))}
-        </div>
-      </div>
-      {/*Quarta sessão*/}
-
-      <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
-        <div className={style.contentBox}>
-          <div className={style.textContainer}>
-            <h2>Onde todo mundo se encontra</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quaerat alias ipsam tenetur distinctio! Quas autem voluptas in consectetur aspernatur veritatis architecto praesentium iste amet, laboriosam minus, sint dolorum doloremque!</p>
-          </div>
-          <div>
-            <video className={style.video} src="./assets/videos/ahcai_video.mp4 " controls type='video/mp4'></video>
-          </div>
-        </div>
-      </div>
-
-
-      {/*Quinta sessão*/}
+      {/*Mapa e midias sociais*/}
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.mapContainer}>

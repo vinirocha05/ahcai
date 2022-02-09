@@ -52,3 +52,16 @@
 .list a:hover:after {
   width: 100%;
 }
+
+@media (max-width:640px){
+  .header ul{
+    display: none
+  };
+
+  .menuHamburguer::before{
+    content: 'OII';
+    font-size: 10rem;
+    height: 10rem;
+    width: 10rem;
+  }
+}
