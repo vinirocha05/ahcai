@@ -12,7 +12,7 @@ export default function Nav({changeHeader}) {
         </div>
       </div>
       <div className={style.list}>
-        <div className={style.menuHamburguer} ></div>
+        <label className={style.menuHamburguer}></label>
         <ul>
           <li><Link href='#inicio' >Início</Link></li>
           <li><Link href='#sobre' >Sobre</Link></li>
