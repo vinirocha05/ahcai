@@ -5,11 +5,9 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ProductRow from "../components/ProductRow";
 
 import style from '../styles/Intro.module.css'
 import { useEffect, useState } from "react";
-import MenuMobile from "../components/menuMobile";
 
 export default function Home() {
   const [changeHeader, setChangeHeader] = useState(false);
