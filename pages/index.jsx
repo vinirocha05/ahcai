@@ -9,13 +9,13 @@ import ProductRow from "../components/ProductRow";
 
 import style from '../styles/Intro.module.css'
 import { useEffect, useState } from "react";
+import MenuMobile from "../components/menuMobile";
 
 export default function Home() {
   const [changeHeader, setChangeHeader] = useState(false);
   const [produtos, setProdutos] = useState([]);
 
   const [x, setX] = useState(1800)
-  console.log(x);
 
   const dados = async () => {
     fetch('http://localhost:3000/api/produtos')
@@ -85,31 +85,11 @@ export default function Home() {
       </div>
 
 
-      {/*Terceira sessão Produtos*/}
+
+
+      {/*Terceira sessão*/}
+
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
-        <button onClick={handleClickLeft} className={style.buttonLeft}><FaAngleLeft /></button>
-        <button onClick={handleClickRight} className={style.buttonRight}><FaAngleRight /></button>
-
-        <div className={style.productContainer} style={{ marginLeft: `${x}px` }} >
-          {produtos.map((e, key) => (
-            <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
-          ))}
-        </div>
-      </div>
-      {/*Terceira sessão Produtos*/}
-      <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
-        <button onClick={handleClickLeft} className={style.buttonLeft}><FaAngleLeft /></button>
-        <button onClick={handleClickRight} className={style.buttonRight}><FaAngleRight /></button>
-
-        <div className={style.gridContainer}>
-          {produtos.map((e, key) => (
-            <ProductRow title={e.title} photo={e.photo} about={e.about} key={key} />
-          ))}
-        </div>
-      </div>
-      {/*Quarta sessão*/}
-
-      <div className={`${style.center} ${style.bgRoxo}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.textContainer}>
             <h2>Onde todo mundo se encontra</h2>

@@ -13,7 +13,6 @@ export default function Home() {
   const [produtos, setProdutos] = useState([]);
 
   const [x, setX] = useState(1800)
-  console.log(x);
 
   const dados = async () => {
     fetch('http://localhost:3000/api/produtos')

@@ -1,6 +1,10 @@
+.mobileList {
+  padding: 3rem;
+}
+
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   transition: all ease 600ms;
   width: 100vw;
 }
@@ -68,6 +72,8 @@
   color: white;
   cursor: pointer;
 }
+
+
 
 @media (max-width:640px){
   .list ul{
