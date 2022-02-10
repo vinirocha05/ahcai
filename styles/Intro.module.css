@@ -1,5 +1,5 @@
 .introBg {
-  background-image: url("/assets/img/intro_background.jpg");
+  background-image: url("/assets/img/acai5.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -46,7 +46,7 @@
 
 .imgContainer{
   margin: 2rem;
-  width: 32rem;
+  width: 50rem;
 }
 
 .video{
@@ -99,6 +99,9 @@
   .textContainer{
     margin-top: -5rem;
   }
+  .introBg{
+    background-image: url("/assets/img/acai3.jpg");
+  }
 
   .video{
     width: 40rem;
@@ -113,6 +116,11 @@
 
   .productContainer{
     overflow-x: hidden;
+  }
+
+  .imgContainer{
+    margin: 2rem;
+    width: 33 em;
   }
 
 }

@@ -38,8 +38,8 @@ export default function Home() {
             <Image src='/assets/img/family_photo.jpg' alt='family' width='500px' height='300px' />
           </div>
           <div className={style.textContainer}>
-            <h2> O melhor ahçai que já provou!</h2>
-            <p>Açaí é muito bom, né? Ainda mais qunado ele é preparado com muito carinho e os melhores ingredientes possíveis. Venha experimentar e se encantar.</p>
+            <h2>O melhor ah!çaí que você já provou!</h2>
+            <p>Açaí é muito bom , né? Ainda mais quando ele é preparado com muito carinho e com os melhores ingredientes possíveis. Venha experimentar e se encantar.</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function Home() {
         <div className={style.contentBox}>
           <div className={style.textContainer}>
             <h2>Onde a mágica acontece</h2>
-            <p>Nosso quiosque se encontra na rodoviária de ribeirão preto, apesar do pequeno espaço é lá que produzimos os melhores açai da cidade!</p>
+            <p>Nosso quiosque se encontra na rodoviária de Ribeirão Preto. Apesar do pequeno espaço, é lá que produzimos os melhores açaís da cidade!</p>
           </div>
           <div>
             <video className={style.video} src="./assets/videos/ahcai_video.mp4 " controls type='video/mp4'></video>

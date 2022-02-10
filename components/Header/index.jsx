@@ -14,10 +14,10 @@ export default function Nav({ changeHeader }) {
     <header style={changeHeader ? { backgroundColor: 'var(--primary-color)' } : { backgroundColor: 'transparent' }} className={style.header}>
       <div style={mobileMenu ? { background: 'var(--primary-color)', width: '100vw', height: '100vh', display:'flex',justifyContent:'center',alignItems:'center', color:'white' } : { display: 'none' }} >
         <ul style={{listStyle:'none', fontSize:'3rem', position:'absolute',top:'20rem', overflow:'hidden'}} onClick={handleClick}>
-          <li className={style.mobileList}><Link href='#inicio' >Início</Link></li>
-          <li className={style.mobileList} ><Link href='#sobre' >Sobre</Link></li>
+          <li className={style.mobileList}><Link href='/#inicio' >Início</Link></li>
+          <li className={style.mobileList} ><Link href='/#sobre' >Sobre</Link></li>
           <li className={style.mobileList} ><Link href='/produtos'>Produtos</Link></li>
-          <li className={style.mobileList} ><Link href='#contato'>Contato</Link></li>
+          <li className={style.mobileList} ><Link href='/#contato'>Contato</Link></li>
         </ul>
       </div>
       <div className={style.headerContainer}>
