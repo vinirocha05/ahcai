@@ -16,7 +16,7 @@ export default function Nav({ changeHeader }) {
         <ul style={{listStyle:'none', fontSize:'3rem', position:'absolute',top:'20rem', overflow:'hidden'}} onClick={handleClick}>
           <li className={style.mobileList}><Link href='#inicio' >Início</Link></li>
           <li className={style.mobileList} ><Link href='#sobre' >Sobre</Link></li>
-          <li className={style.mobileList} ><Link href='/produto'>Produtos</Link></li>
+          <li className={style.mobileList} ><Link href='/produtos'>Produtos</Link></li>
           <li className={style.mobileList} ><Link href='#contato'>Contato</Link></li>
         </ul>
       </div>
