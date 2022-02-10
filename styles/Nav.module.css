@@ -57,13 +57,15 @@
   width: 100%;
 }
 
+
 .menuHamburguer::after{
   opacity: 0;
   content: '≡';
   position: fixed;
+  display: block;
   z-index: 1000;
   top: 3rem;
-  right: 2rem;
+  right:1rem;
   font-size: 3rem;
   line-height: 3rem;
   width: 5rem;
@@ -76,8 +78,8 @@
 
 
 @media (max-width:640px){
-  .list ul{
-    opacity: 0;
+  .list ul li{
+    display: none;
   }
   .menuHamburguer::after{
     opacity: 1;

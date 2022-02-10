@@ -6,18 +6,7 @@ import Footer from "../components/Footer";
 import style from '../styles/Intro.module.css'
 import { useEffect, useState } from "react";
 
-export async function getStaticProps(){
-  const dados = await fetch('http://localhost:3000/api/produtos')
-  const produtos = await dados.json()
-
-  return{
-    props:{
-      produtos,
-    }
-  }
-}
-
-export default function Produtos({produtos}) {
+export default function Produtos() {
   const [changeHeader, setChangeHeader] = useState(false);
 
   useEffect(() => {
@@ -42,7 +31,7 @@ export default function Produtos({produtos}) {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.imgContainer}>
-            <Image src={produtos[0].photo} alt='family' width='500px' height='300px' />
+            <Image src='/assets/img/tigela_acai2.jpeg' alt='family' width='800px' height='600px' />
           </div>
           <div className={style.textContainer}>
             <h2>O melhor ahçaí de todos</h2>
@@ -60,7 +49,7 @@ export default function Produtos({produtos}) {
             <p>No calor de Ribeirão nada melhor do que um sorvete paa refrescar. Ainda melhor se o sorvete for da Pimpinela, famosa pela qualdiade dos servetes produzidos. </p>
           </div>
           <div>
-            <Image src={produtos[1].photo} alt='family' width='500px' height='300px' />
+            <Image src='/assets/img/sorvete.jpg' alt='family' width='500px' height='300px' />
           </div>
         </div>
       </div>
@@ -69,7 +58,7 @@ export default function Produtos({produtos}) {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.imgContainer}>
-            <Image src={produtos[2].photo} alt='family' width='500px' height='300px' />
+            <Image src='/assets/img/agua_coco.png' alt='family' width='500px' height='300px' />
           </div>
           <div className={style.textContainer}>
             <h2>Água de coco</h2>

@@ -25,9 +25,9 @@
 
 .contentBox {
   height: 80vh;
+  width: 100vw;
   padding: 10rem;
   display: grid;
-  gap: 2rem;
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
 }
@@ -45,7 +45,8 @@
 }
 
 .imgContainer{
-  margin: 5rem;
+  margin: 2rem;
+  width: 32rem;
 }
 
 .video{
@@ -58,7 +59,6 @@
   width: 45rem;
   height: 35rem;
   border-radius: 5px;
-  margin: 5rem;
 }
 
 .iconsContainer{
