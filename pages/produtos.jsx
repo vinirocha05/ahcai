@@ -77,9 +77,7 @@ export default function Produtos({produtos}) {
           </div>
         </div>
       </div>
-
-
-      <Footer />
+      <Footer/>
     </>
   )
 };

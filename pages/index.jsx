@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp } from 'react-icons/fa'
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -11,15 +10,9 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [changeHeader, setChangeHeader] = useState(false);
-  const [produtos, setProdutos] = useState([]);
 
-  const dados = async () => {
-    fetch('http://localhost:3000/api/produtos')
-      .then(resp => resp.json())
-      .then(dados => setProdutos(dados))
-  }
+
   useEffect(() => {
-    dados()
     const scrollListener = () => {
       if (window.scrollY > 500) {
         setChangeHeader(true);
