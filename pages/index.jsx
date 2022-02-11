@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -69,7 +69,8 @@ export default function Home() {
             <h2>Gostou do açaí?<br/> Faça um pedido</h2>
             <p>Se você gostou do açai, pode fazer um pedido pelo Ifood. Ou se estiver de passagem pelo centro de Ribeirão Preto, é só dar uma passada no nosso quiosque.</p>
             <div className={style.iconsContainer}>
-              <Link href='https://whatsa.me/5516981584145/?t=Oii!%20Gostaria%20de%20saber%20mais%20sobre%20o%20A%C3%A7ai!' passHref><a><FaWhatsapp /></a></Link>
+              <Link href='https://whatsa.me/5516994445096/?t=Oii!%20Gostaria%20de%20saber%20mais%20sobre%20o%20A%C3%A7ai!' passHref><a><FaWhatsapp /></a></Link>
+              <Link href='https://www.instagram.com/rodo_ahcai/' passHref><a><FaInstagram /></a></Link>
               <Link href='https://www.ifood.com.br/delivery/ribeirao-preto-sp/ahcai-delicias-brasileiras-centro/33b49dfc-40cd-4bae-baff-028964ab516d?UTM_Medium=share' passHref><a><span><Image src='/assets/img/ifood-logo.svg' alt='Link para o ifood ' width='65px' height='45px' /></span></a></Link>
             </div>
           </div>
