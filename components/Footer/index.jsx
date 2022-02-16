@@ -5,6 +5,7 @@ export default function Footer() {
     <footer className={style.footer}>
       <p>Todos os direitos reservados</p>
       <p>2022</p>
+      <p>Desenvolvido por @vinirocha05</p>
     </footer>
   )
 

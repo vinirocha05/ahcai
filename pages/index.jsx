@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className={style.textContainer}>
             <h2>O melhor ah!çaí que você já provou!</h2>
-            <p>Açaí é muito bom , né? Ainda mais quando ele é preparado com muito carinho e com os melhores ingredientes possíveis. Venha experimentar e se encantar.</p>
+            <p>Açaí é muito bom, né? Ainda mais quando ele é preparado com muito carinho e com os melhores ingredientes do mundo. Venha experimentar e se encantar.</p>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function Home() {
       <div className={`${style.center} ${style.bgRoxo}`} id='sobre'>
         <div className={style.contentBox}>
           <div className={style.textContainer}>
-            <h2>Onde a mágica acontece</h2>
+            <h2>Onde a mágica acontece?</h2>
             <p>Nosso quiosque se encontra na rodoviária de Ribeirão Preto. Apesar do pequeno espaço, é lá que produzimos os melhores açaís da cidade!</p>
           </div>
           <div>

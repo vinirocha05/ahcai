@@ -31,7 +31,7 @@ export default function Produtos() {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.imgContainer}>
-            <Image src='/assets/img/tigela_acai2.jpeg' alt='family' width='800px' height='600px' />
+            <Image src='/assets/img/tigela_acai2.jpeg' alt='family' width='500px' height='300px' />
           </div>
           <div className={style.textContainer}>
             <h2>O melhor ahçaí de todos</h2>
