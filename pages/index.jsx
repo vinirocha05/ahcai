@@ -35,7 +35,7 @@ export default function Home() {
       <div className={`${style.center} ${style.bgWhite}`} id='inicio'>
         <div className={style.contentBox}>
           <div className={style.imgContainer}>
-            <Image src='/assets/img/family_photo.jpg' alt='family' width='500px' height='300px' />
+            <Image src='/assets/img/intro_background.jpg' alt='family' width='500px' height='300px' />
           </div>
           <div className={style.textContainer}>
             <h2>O melhor ah!çaí que você já provou!</h2>
